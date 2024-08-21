@@ -30,6 +30,11 @@ size: 16:9
         text-decoration: underline;
     }
 
+    section table {
+        width: 100% !important;
+        display: table;
+    }
+
     footer {
         font-size: .5rem;
         color: gray;
@@ -56,7 +61,7 @@ size: 16:9
 
 ---
 
-# 本日のアジェンダ
+# アジェンダ
 
 - WordPress のパターンとは
 - パターンの種類
@@ -118,7 +123,7 @@ _color: white
 - どこで使用しても変更されない
 - 旧・再利用ブロックと同じ
 - **オリジナルを変更すると配置したすべての同期パターンに反映される**
-- WordPress 6.6 から任意の箇所を上書き可能に設定できるようになった
+- WordPress 6.6 から**任意の箇所を上書き可能に設定できる**ようになった
 
 ---
 
@@ -136,6 +141,19 @@ _color: white
 
 ---
 
+# 同期パターンの上書き機能
+
+- 同期パターンとして登録したパターン内の特定のブロックを任意で上書き可能に設定できる
+
+|6.6 で利用可能ブロック|サポートされる属性|
+|:---|:---|
+|画像| `url`, `alt`, `title`|
+|見出し|`cotnent`|
+|段落|`content`|
+|ボタン|`url`, `text`, `linkTarget`, `rel`|
+
+---
+
 <!--
 _backgroundColor: #081226
 _color: white
@@ -149,13 +167,48 @@ _color: white
 
 - サイトエディター or ブロックエディターから登録
 - テーマフォルダの中に `/patterns` ディレクトリを作って PHP ファイルを用意
-- プラグインからは `[register_block_pattern()](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-patterns/)` で登録
+- プラグインからは `register_block_pattern()` で登録
 
 ---
 
-# 利用例
+![bg contain](https://raw.githubusercontent.com/Olein-jp/slide/main/doc/all-about-wordpress-pattern/assets/images/tt4-directory-of-pattern.png)
 
+---
 
+# 利用できるプロパティ例
+
+```
+<?php
+/**
+ * Title: About
+ * Slug: twentytwentyfour/page-about-business
+ * Categories: page
+ * Keywords: starter
+ * Block Types: core/post-content
+ * Post Types: page, wp_template
+ * Viewport width: 1400
+ */
+?>
+```
+
+[Patterns – Block Editor Handbook | Developer.WordPress.org](https://developer.wordpress.org/block-editor/reference-guides/block-api/block-patterns/)
+
+---
+
+# 活用方法
+
+## 非同期パターン
+
+- ページやコンテンツの雛形
+
+## 同期パターン
+
+- CTA や バナーなどの管理
+
+## 同期パターンの上書き機能
+
+- スタイルは共通管理、コンテンツは変わるもの
+    - カスタムフィールドを読み込んだブロックを登録する？
 
 ---
 
@@ -182,10 +235,10 @@ _color: white
 1. パターンを配置してみる
 1. ブロックを配置してパターンに登録してみる（非同期）
 1. 同期パターンとして登録してみる
-1. 同期パターン内のブロックを上書き可能設定してみる
+1. 同期パターン内のブロックを上書き可能設定にしてみる
 
 ---
 
 # 同じように取り組みたい方
 
-`https://~`
+`https://playground.wordpress.net/?blueprint-url=https://raw.githubusercontent.com/Olein-jp/my-wordpress-playground-data/main/blueprints/all-about-wordpress-pattern.json`
