@@ -5,3 +5,4 @@
 ## 一覧
 
 - [WordPressのパターンを理解しよう](./pdf/all-about-wordpress-pattern.pdf) @富山 WordPress Meetup （2024年8月21日）
+- ブロックパターンの基本をマスターしよう @岐阜 WordPress Meetup （2024年8月24日）
