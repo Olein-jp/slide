@@ -6,8 +6,10 @@
   "scripts": {
     "marp:pdf:all-about-wordpress-pattern": "npx marp doc/all-about-wordpress-pattern/all-about-wordpress-pattern.md -o pdf/all-about-wordpress-pattern.pdf --pdf",
     "marp:pdf:master-wordpress-pattern": "npx marp doc/master-wordpress-pattern/master-wordpress-pattern.md -o pdf/master-wordpress-pattern.pdf --pdf",
+    "marp:pdf:basic-knowledge-of-wordpress-security-to-run-your-site": "npx marp doc/basic-knowledge-of-wordpress-security-to-run-your-site/basic-knowledge-of-wordpress-security-to-run-your-site.md -o pdf/basic-knowledge-of-wordpress-security-to-run-your-site.pdf --pdf",
     "marp:html:all-about-wordpress-pattern": "npx marp doc/all-about-wordpress-pattern/all-about-wordpress-pattern.md -o html/all-about-wordpress-pattern.html",
     "marp:html:master-wordpress-pattern": "npx marp doc/master-wordpress-pattern/master-wordpress-pattern.md -o html/master-wordpress-pattern.html",
+    "marp:html:basic-knowledge-of-wordpress-security-to-run-your-site": "npx marp doc/basic-knowledge-of-wordpress-security-to-run-your-site/basic-knowledge-of-wordpress-security-to-run-your-site.md -o html/basic-knowledge-of-wordpress-security-to-run-your-site.html",
     "marp:pdf": "run-s marp:pdf:*",
     "marp:html": "run-s marp:html:*",
     "marp": "run-p marp:*",
