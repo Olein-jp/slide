@@ -51,10 +51,16 @@ size: 16:9
     section.section-title:after {
         color: white;
     }
+
     section.only-bg-image header,
     section.only-bg-image footer,
     section.only-bg-image:after {
         display: none;
+    }
+
+    section.big-message {
+        background-color: yellow;
+        color: #ffffff;
     }
 </style>
 
@@ -83,8 +89,8 @@ size: 16:9
 - WordPress セキュリティとは
 - セキュリティ設定の基本
 - アップデートの重要性
-- 信頼できるプラグインの活用
 - バックアップという保険
+- 信頼できるプラグインの活用
 - ユーザー管理と権限設定
 - セキュリティに対する意識向上
 - 今日から始められるセキュリティ対策
@@ -242,6 +248,8 @@ _class: section-title
 
 ---
 
+![bg left](https://raw.githubusercontent.com/Olein-jp/slide/main/doc/basic-knowledge-of-wordpress-security-to-run-your-site/asstes/images/WordPress-update-sign.png)
+
 ## アップデート対象
 
 - WordPress本体（コア）
@@ -250,22 +258,158 @@ _class: section-title
 
 ---
 
+## コアアップデートの種類
 
+| 種類 | 主な内容         | 頻度  | バージョン番号の変化 |
+| --- |--------------|-----|-----------|
+| メジャーアップデート | 新機能の追加、パフォーマンス向上など | 年に３回（2023年の事例）| 6.6 → 6.7 |
+| マイナーアップデート | バグ修正、セキュリティ修正など | 不定期 | 6.6.1 → 6.6.2 |
+
+---
+
+## アップデートを躊躇する理由
+
+- 画面が真っ白になるかもしれない
+- エラーが出るかもしれない
+- 表示が崩れるかもしれない
+
+--
+
+- これらの情報を見聞き（または体験して）して恐る
+- すべては可能性の話（何も起きない可能性もある）
 
 ---
 
-<!--
-_class: section-title
--->
+## アップデートをしなかったら？
 
-# 信頼できるプラグインの活用
+- 脆弱性を抱えた状態で公開される可能性
+- サイトが乗っ取られる可能性
+- 踏み台にされる可能性（他社への攻撃につながる）
 
 ---
+
+## アップデートに対する考え方のススメ
+
+---
+
+<!-- _class: big-message -->
+
+## アップデートは可能な限り早期に実施する
+
+- 画面が真っ白になったら**対処する**
+- エラーが出たら**対処する**
+- 表示か崩れたら**対処する**
+
+個人的な考え方です。全ての方に推奨する意図はありません。
+
+---
+
+## 対処することは運用の一部
+
+- 日々の運用で改善を繰り返すのがウェブサイト運用
+- 課題・問題→対処→効果測定などの繰り返し
+- アップデートもその一貫だと考える
+
+---
+
+## アップデートで問題が起きにくい作りを考える
+
+- WordPress の仕様への理解
+- デザインと機能の分離（テーマ・プラグインテリトリー）
+- 継続的メンテナンスができない機能追加は慎重に検討する
+
+---
+
+## 適切に自動アップデートを有効化する
+
+例えば…
+
+- WordPress マイナーアップデートは有効化する
+- ユーザーから情報入力があるプラグインは有効化する
+- 表示（フロント側）に影響がないプラグインは有効化する
+
+---
+
 <!--
 _class: section-title
 -->
 
 # バックアップという保険
+
+---
+
+## バックアップは何か問題が起きた場合の重要な備え
+
+- アップデートで問題が発生した場合に利用
+- ハッキングされた場合のロールバックに利用
+- その他、想定外の問題が発生した際に復元に利用
+
+---
+
+## バックアップ取得の頻度
+
+- ウェブサイトにより最適解が変わる
+  - ウェブサイトの更新頻度によって最適解を探る必要がある
+
+---
+
+## バックアップ取得方法
+
+- プラグインで行う（推奨）
+  - [UpdraftPlus](https://ja.wordpress.org/plugins/updraftplus/)
+  - [BackWPup](https://ja.wordpress.org/plugins/backwpup/)
+  - [All-in-One WP Migration](https://ja.wordpress.org/plugins/all-in-one-wp-migration/) など
+- 自身で手動で行う
+  - データベースの書き出し
+  - `/wp-content/` ディレクトリのコピーなど
+
+---
+
+<!--
+_class: section-title
+-->
+
+# プラグインの活用
+
+---
+
+## よく聞くセキュリティ系プラグイン
+
+- [Wordfence](https://ja.wordpress.org/plugins/wordfence/)
+- [Sucuri Security](https://ja.wordpress.org/plugins/sucuri-scanner/) など
+
+---
+
+## セキュリティ系プラグイン利用について（個人的な意見）
+
+- プラグインを**入れる前にやるべき対策がある**ことを理解
+- それらが完璧に対応された上での利用を推奨する
+
+**「セキュリティ系プラグインを入れたから安心」という考え方は危険**
+
+---
+
+<!--
+_class: section-title
+-->
+
+# サーバーのセキュリティ
+
+---
+
+## SSLの導入
+
+- インターネット通信の暗号化するセキュリティ機能
+- SSL 証明書は上記の情報暗号化通信に加え、そのウェブサイトが信頼できるものであることを証明する
+- 多くのレンタルサーバーで無料で導入・設定が可能
+- SEO の観点からもメリットがある
+
+---
+
+## サーバー内のファイル権限設定
+
+- ファイルの読み書き権限を適切に設定する
+- レンタルサーバーが用意する簡単 WordPress インストール機能を使っておけば問題ない
 
 ---
 
@@ -277,11 +421,54 @@ _class: section-title
 
 ---
 
+## ユーザーアカウントは一人に一つ
+
+- ユーザーアカウントを複数人で共有しない
+- 誰がいつどんな操作をしたのか特定できなくなる
+- 一人がパスワードを変更した場合、他の人がログインできなくなる
+
+---
+
+## 必要最小限の権限を与える
+
+- ユーザー毎に適切な権限を最小限で与える
+- WordPress に詳しくない人には管理権限を普段使いさせない
+  - 普段は最低限の権限を提供し、必要な場合のみ管理者権限を利用するなどの方法もあり
+
+---
+
+## ユーザーの活動監視
+
+- 各ユーザーの WordPress 内での活動内容を記録・監視する
+- 問題が発生した場合に、実行者の特定と以後の改善方法共有などが可能になる
+
+--
+
+- [Simple History](https://ja.wordpress.org/plugins/simple-history/)
+- [WP Activity Log](https://ja.wordpress.org/plugins/wp-security-audit-log/)
+
+---
+
 <!--
 _class: section-title
 -->
 
 # セキュリティに対する意識向上
+
+---
+
+## 対策実行とアップデートの大切さを知る
+
+- 自身の環境と照らし合わせて、必要な対策を速やかに実施する
+- アップデートの重要性を理解し、適切なタイミングで実施する
+
+---
+
+## セキュリティに関する情報を定期的にチェック
+
+- 信頼できる情報源を見つける
+- WordPress Meetup などのコミュニティに参加し情報収集する
+- セキュリティに関する情報収集は立派な「保守」の一部
 
 ---
 
@@ -292,3 +479,27 @@ _class: section-title
 # 今日から始められるセキュリティ対策
 
 ---
+
+<!--
+_class: section-title
+-->
+
+# 総務省からの情報提供（参考）
+
+---
+
+## サイバー
+
+---
+
+# まとめ
+
+---
+
+参考資料一覧
+
+- [Password Best Practices](https://wordpress.org/documentation/article/password-best-practices/)
+- [Updatiing WordPress](https://wordpress.org/documentation/article/updating-wordpress/)
+- [Usage statistics and market share of WordPress](https://w3techs.com/technologies/details/cm-wordpress)
+- [サイバーセキュリティ初心者のための三原則](https://www.soumu.go.jp/main_sosiki/cybersecurity/kokumin/intro/beginner/)
+- [Changing File Permissions – Advanced Administration Handbook](https://developer.wordpress.org/advanced-administration/server/file-permissions/)
