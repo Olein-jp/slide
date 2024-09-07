@@ -1,7 +1,7 @@
 ---
 theme: default
 paginate: true
-footer: "Gifu WordPress Meetup #73" 
+footer: "Gifu WordPress Meetup #74" 
 size: 16:9
 ---
 
