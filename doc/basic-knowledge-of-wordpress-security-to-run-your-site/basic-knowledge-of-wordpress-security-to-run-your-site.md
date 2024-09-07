@@ -156,6 +156,7 @@ _class: section-title
 
 ## 一意のアカウント名
 
+- ブルートフォース攻撃では一般的なユーザー名とパスワードの組み合わせ辞書を使用する
 - `admin` は使わない
 - ユーザー名は公開情報
 - ユーザー名は推測されやすい
@@ -174,8 +175,7 @@ _class: section-title
 
 ## 絶対に避けるべきパスワード
 
-- パートナーや子供の名前
-- ペットの名前
+- パートナーや子供、ペットの名前
 - 会社名
 - 好きなスポーツチームや車の名前
 - 生まれた年
@@ -207,11 +207,50 @@ _class: only-bg-image
 
 ---
 
+![bg left](https://raw.githubusercontent.com/Olein-jp/slide/main/doc/basic-knowledge-of-wordpress-security-to-run-your-site/asstes/images/securi-password-check.png)
+
+## パスワードの強度チェック
+
+- [How Secure Is My Password?](https://www.security.org/how-secure-is-my-password/)
+
+---
+
+## ２要素認証（2FA:Two-Factor Authentication）
+
+２つの異なる要素を使って認証する（以下のうち２つを組み合わせる）
+
+1. 知識要素（パスワードやPIN）
+2. 所持要素（スマホなど）
+3. 生体要素（指紋や顔認証）
+
+---
+
 <!--
 _class: section-title
 -->
 
 # アップデートの重要性
+
+---
+
+## アップデートとは
+
+- 機能の追加
+- バグの修正など
+
+最適な状態を保つための取り組み
+
+---
+
+## アップデート対象
+
+- WordPress本体（コア）
+- テーマ
+- プラグイン
+
+---
+
+
 
 ---
 
