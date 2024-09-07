@@ -51,6 +51,11 @@ size: 16:9
     section.section-title:after {
         color: white;
     }
+    section.only-bg-image header,
+    section.only-bg-image footer,
+    section.only-bg-image:after {
+        display: none;
+    }
 </style>
 
 # 安心してサイトを運営するためのWordPressセキュリティの基礎知識
@@ -149,6 +154,14 @@ _class: section-title
 
 ---
 
+## 一意のアカウント名
+
+- `admin` は使わない
+- ユーザー名は公開情報
+- ユーザー名は推測されやすい
+
+---
+
 ## 強力なパスワード
 
 - 20文字以上
@@ -168,13 +181,29 @@ _class: section-title
 - 生まれた年
 - あなたの誕生日
 
-これらはすべて公開情報→簡単に推測される
+これらはすべて**公開情報**→**簡単に推測される**
 
 ---
 
 ## WordPress で自動生成する
 
-![bg]()
+---
+
+<!--
+_class: only-bg-image
+-->
+
+![bg](https://raw.githubusercontent.com/Olein-jp/slide/main/doc/basic-knowledge-of-wordpress-security-to-run-your-site/asstes/images/wp-password-generate.png)
+
+---
+
+## ブラウザのパスワードマネージャーを利用する
+
+- Chrome, Safari, Firefox など主要ブラウザで利用可能
+- パスワードを自動生成して保存をサポートしてくれる
+- パスワードを覚える必要がない
+- 共有する場合はアプリを利用する
+  - [1Password など色々とある](https://en.wikipedia.org/wiki/List_of_password_managers)
 
 ---
 
