@@ -1,7 +1,7 @@
 ---
 theme: default
 paginate: true
-header: "安心してサイトを運営するためのWordPressセキュリティの基礎知識"
+header: "安心してウェブサイトを運営するためのWordPressセキュリティの基礎知識"
 footer: "Gifu WordPress Meetup #74" 
 size: 16:9
 ---
@@ -23,7 +23,7 @@ size: 16:9
     }
 
     strong {
-        color: 
+        text-decoration: underline;
     }
 
     a {
@@ -46,6 +46,7 @@ size: 16:9
         background-color: #081226;
     }
     section.section-title h1,
+    section.section-title h2,
     section.section-title header,
     section.section-title footer,
     section.section-title:after {
@@ -64,7 +65,7 @@ size: 16:9
     }
 </style>
 
-# 安心してサイトを運営するためのWordPressセキュリティの基礎知識
+# 安心してウェブサイトを運営するためのWordPressセキュリティの基礎知識
 
 ---
 
@@ -86,14 +87,15 @@ size: 16:9
 
 # アジェンダ
 
-- WordPress セキュリティとは
-- セキュリティ設定の基本
-- アップデートの重要性
+- 前提認識・知識
+- WordPress セキュリティの考え方
+- セキュリティの基本の「き」
+- 「アップデートしない」は無い
 - バックアップという保険
-- 信頼できるプラグインの活用
+- プラグインを理解して活用する
 - ユーザー管理と権限設定
 - セキュリティに対する意識向上
-- 今日から始められるセキュリティ対策
+- まとめ
 
 ---
 
@@ -101,7 +103,14 @@ size: 16:9
 _class: section-title
 -->
 
-# WordPress セキュリティとは
+# 前提認識・知識
+
+---
+
+## 想定
+
+- 一般的な WordPress の利用方法を想定
+- WordPress.org（インストール型）を想定
 
 ---
 
@@ -110,22 +119,37 @@ _class: section-title
 - コンテンツマネージメントシステム（CMS）の１つ
 - グローバルシェアは約43%
 - [日本国内シェアは82%以上](https://w3techs.com/technologies/segmentation/cl-ja-/content_management)
-- 本セッションは WordPress.org（インストール型）を想定した内容
 
 ---
 
-## WordPress のよくある利用例
+## 使われ方はさまざま
 
 - 個人ブログやビジネス用ウェブサイトなど
-- 専門家ではない個人（社内web担当者含む）または管理委託業者など
+- 専門家ではない個人（社内web担当者含む）または管理委託業者などが利用
 - 独自ドメイン利用、レンタルサーバーで稼働
 - レンタルサーバーが提供する自動インストール機能を利用
 
 ---
 
+## システムであり、ソフトウェアである
+
+- CMS:コンテンツを管理するシステム 
+- "WordPress is open source software."
+  - 引用：[About – WordPress.org](https://wordpress.org/about/)
+
+---
+
+<!--
+_class: section-title
+-->
+
+# WordPress セキュリティの考え方
+
+---
+
 ![bg left](https://images.unsplash.com/photo-1460408037948-b89a5e837b41)
 
-## WordPress は自分の家と考えよう
+## WordPress は自分の家
 
 - 自分が責任を持って**管理**する
 - 自分が責任を持って**運営**する
@@ -145,10 +169,17 @@ _class: section-title
 
 ---
 
-## WordPress のセキュリティ対策とは
+## なぜセキュリティ対策をするのか
 
-- 自身のウェブサイトの**情報を守る**ための取り組み
-- 自身のウェブサイトが**他社に悪影響を及ぼさない**ための取り組み
+- 自身のウェブサイトの**情報を守る**ため
+- 自身のウェブサイトが**他に悪影響を及ぼさない**ため
+
+---
+
+## 対策対象は大きく分けて２つ
+
+- 入り口（ログイン画面）
+- WordPress 本体（コア）・テーマ・プラグイン
 
 ---
 
@@ -156,7 +187,7 @@ _class: section-title
 _class: section-title
 -->
 
-# セキュリティ設定の基本
+# セキュリティ設定の基本の「き」
 
 ---
 
@@ -235,7 +266,7 @@ _class: only-bg-image
 _class: section-title
 -->
 
-# アップデートの重要性
+# 「アップデートしない」は無い
 
 ---
 
@@ -244,7 +275,7 @@ _class: section-title
 - 機能の追加
 - バグの修正など
 
-最適な状態を保つための取り組み
+**最適な状態を保つための取り組み**
 
 ---
 
@@ -269,14 +300,23 @@ _class: section-title
 
 ## アップデートを躊躇する理由
 
-- 画面が真っ白になるかもしれない
-- エラーが出るかもしれない
-- 表示が崩れるかもしれない
+- **画面が真っ白になるかも**しれない
+- **エラーが出るかも**しれない
+- **表示が崩れるかも**しれない
 
 --
 
 - これらの情報を見聞き（または体験して）して恐る
-- すべては可能性の話（何も起きない可能性もある）
+- 結果はやってみないとわからない（？
+
+---
+
+## テスト環境を作ってアップデートを試す
+
+1. 稼働ウェブサイトと全く同じものを壊れても良い環境に用意する
+2. 実際にアップデートを行う
+3. 管理画面や実際の表示に問題がないか確認する
+4. 問題がなかったら or 問題を解決したら本番環境でアップデートを行う
 
 ---
 
@@ -284,15 +324,13 @@ _class: section-title
 
 - 脆弱性を抱えた状態で公開される可能性
 - サイトが乗っ取られる可能性
-- 踏み台にされる可能性（他社への攻撃につながる）
+- 踏み台にされる可能性（他への攻撃につながる）
 
 ---
 
-## アップデートに対する考え方のススメ
+## 僕がお勧めするアップデートに対する考え方は…
 
 ---
-
-<!-- _class: big-message -->
 
 ## アップデートは可能な限り早期に実施する
 
@@ -300,7 +338,12 @@ _class: section-title
 - エラーが出たら**対処する**
 - 表示か崩れたら**対処する**
 
-個人的な考え方です。全ての方に推奨する意図はありません。
+--
+
+- 脆弱性を抱えて誰かに迷惑をかけてしまう or 表示が崩れる
+- 見えにくい問題を抱える or 見える問題を抱える
+
+どちらを選ぶ？
 
 ---
 
@@ -314,19 +357,33 @@ _class: section-title
 
 ## アップデートで問題が起きにくい作りを考える
 
-- WordPress の仕様への理解
-- デザインと機能の分離（テーマ・プラグインテリトリー）
+- WordPress への理解
+- 見た目（テーマ）と機能（プラグイン）の分離
 - 継続的メンテナンスができない機能追加は慎重に検討する
 
 ---
 
-## 適切に自動アップデートを有効化する
+## 自動アップデートを適切に活用する
 
 例えば…
 
 - WordPress マイナーアップデートは有効化する
 - ユーザーから情報入力があるプラグインは有効化する
 - 表示（フロント側）に影響がないプラグインは有効化する
+
+などなど
+
+---
+
+## .。(「本業ではないので簡単に言わないでください」)
+
+ウェブサイトの運用・運営は以下の３つに絞れる
+
+- 自分で運用・運営する
+- 専門家に委託する
+- 適材適所で依頼・委託する
+
+本業ではない方は、**困った時に相談できる専門家を見つけておく**と良いかも
 
 ---
 
@@ -349,7 +406,7 @@ _class: section-title
 ## バックアップ取得の頻度
 
 - ウェブサイトにより最適解が変わる
-  - ウェブサイトの更新頻度によって最適解を探る必要がある
+- ウェブサイトの更新頻度によって最適解を探る必要がある
 
 ---
 
@@ -365,6 +422,16 @@ _class: section-title
 
 ---
 
+意外と盲点！
+
+## バックアップからの復元方法の確認
+
+- バックアップを取得するだけでなく、復元方法も確認しておく
+- いざという時はトラブルが発生している状態
+- そんな時にも適切に対応できるように準備しておく
+
+---
+
 <!--
 _class: section-title
 -->
@@ -376,7 +443,11 @@ _class: section-title
 ## よく聞くセキュリティ系プラグイン
 
 - [Wordfence](https://ja.wordpress.org/plugins/wordfence/)
-- [Sucuri Security](https://ja.wordpress.org/plugins/sucuri-scanner/) など
+- [Sucuri Security](https://ja.wordpress.org/plugins/sucuri-scanner/) 
+- [XO Security](https://ja.wordpress.org/plugins/xo-security/)
+- [SiteGuard WP Plugin](https://ja.wordpress.org/plugins/siteguard/)
+
+などたくさんある
 
 ---
 
@@ -472,34 +543,36 @@ _class: section-title
 
 ---
 
-<!--
-_class: section-title
--->
-
-# 今日から始められるセキュリティ対策
-
----
-
-<!--
-_class: section-title
--->
-
-# 総務省からの情報提供（参考）
-
----
-
-## サイバー
-
----
-
 # まとめ
 
+- WordPress セキュリティは自身の家を守ることと同じ
+- 基本的な点をしっかり対策する
+- アップデートは実施する前提で WordPress を使う
+- 情報収集を継続的に行う
+
 ---
 
-参考資料一覧
+# おまけ
+
+## 僕の基本セキュリティ対策
+
+- パスワードを強固なものにする
+- ログイン画面にひらがな画像認証を導入
+- １時間におけるログイン試行回数制限
+- 二要素認証の導入
+- コメント機能の無効化
+- WordPress コアはマイナーアップデート自動化
+- テーマ・プラグインは可能な限り自動アップデート有効化
+- バックアップは毎日取得し、稼働サーバーとは別の場所に保存
+
+---
+
+## 参考資料一覧
 
 - [Password Best Practices](https://wordpress.org/documentation/article/password-best-practices/)
 - [Updatiing WordPress](https://wordpress.org/documentation/article/updating-wordpress/)
 - [Usage statistics and market share of WordPress](https://w3techs.com/technologies/details/cm-wordpress)
-- [サイバーセキュリティ初心者のための三原則](https://www.soumu.go.jp/main_sosiki/cybersecurity/kokumin/intro/beginner/)
 - [Changing File Permissions – Advanced Administration Handbook](https://developer.wordpress.org/advanced-administration/server/file-permissions/)
+- [サイバーセキュリティ初心者のための三原則](https://www.soumu.go.jp/main_sosiki/cybersecurity/kokumin/intro/beginner/)
+- [安全なパスワードの設定・管理 | 国民のためのサイバーセキュリティサイト](https://www.soumu.go.jp/main_sosiki/cybersecurity/kokumin/security/business/staff/06/)
+- [インターネットの安全・安心ハンドブック - NISC](https://security-portal.nisc.go.jp/guidance/handbook.html)
