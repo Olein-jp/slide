@@ -17,6 +17,9 @@
     "marp:basic-knowledge-of-wordpress-security-to-run-your-site:image": "npx marp --images png doc/basic-knowledge-of-wordpress-security-to-run-your-site/basic-knowledge-of-wordpress-security-to-run-your-site.md -o image/basic-knowledge-of-wordpress-security-to-run-your-site/image.png",
     "marp:basic-knowledge-of-wordpress-security-to-run-your-site": "run-s marp:basic-knowledge-of-wordpress-security-to-run-your-site:*",
     "marp:about-wordpress-maintenance:pdf": "npx marp doc/about-wordpress-maintenance/about-wordpress-maintenance.md -o pdf/about-wordpress-maintenance.pdf --pdf",
+    "marp:about-wordpress-maintenance:html": "npx marp doc/about-wordpress-maintenance/about-wordpress-maintenance.md -o html/about-wordpress-maintenance.html",
+    "marp:about-wordpress-maintenance:image": "npx marp --images png doc/about-wordpress-maintenance/about-wordpress-maintenance.md -o image/about-wordpress-maintenance/image.png",
+    "marp:about-wordpress-maintenance": "run-s marp:about-wordpress-maintenance:*",
     "marp": "run-p marp:*",
     "checkNpmUpdate": "ncu -u",
     "updateNpmPackage": "npm install"
