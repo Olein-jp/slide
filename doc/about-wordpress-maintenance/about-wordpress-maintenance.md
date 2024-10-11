@@ -46,6 +46,7 @@ size: 16:9
     }
     section.section-title h1,
     section.section-title h2,
+    section.section-title p,
     section.section-title header,
     section.section-title footer,
     section.section-title:after {
@@ -81,8 +82,6 @@ size: 16:9
 - [hook wp_](https://hook-wp.com/) メンバー
 - [本、書きました（TT4本）](https://amzn.to/4fKGPWd)
 
-**最近、メルマガはじめました**✉️
-
 ---
 
 # アジェンダ
@@ -91,12 +90,15 @@ size: 16:9
 - WordPress の保守で行うこと
 - 保守に必要な費用
 - なぜ保守が必要なのか
+- まとめ
 
 ---
 
 <!-- _class: section-title -->
 
 # 「保守」と「メンテナンス」の定義
+
+「保守」を翻訳すると「Maintenance」となる
 
 ---
 
@@ -275,7 +277,7 @@ WordPress の全体的な機能を **長期間にわたり安定して稼動さ�
 - ウェブサイト表示速度を最適化することで閲覧者の体験を向上させる
   - SEO にも影響する可能性がある（検索流入にも影響？）
 - ウェブサイトがダウンしていると閲覧者は離れていく
-- **「ウェブサイトは常に稼働していること」が普通になっている**
+- 閲覧者にとっては **「ウェブサイトは常に最適な状態で稼働していること」が普通** になっている
 
 ---
 
