@@ -20,6 +20,10 @@
     "marp:about-wordpress-maintenance:html": "npx marp doc/about-wordpress-maintenance/about-wordpress-maintenance.md -o html/about-wordpress-maintenance.html",
     "marp:about-wordpress-maintenance:image": "npx marp --images png doc/about-wordpress-maintenance/about-wordpress-maintenance.md -o image/about-wordpress-maintenance/image.png",
     "marp:about-wordpress-maintenance": "run-s marp:about-wordpress-maintenance:*",
+    "marp:fundamentals-of-blocks-and-patterns-utilisation:pdf": "npx marp doc/fundamentals-of-blocks-and-patterns-utilisation/fundamentals-of-blocks-and-patterns-utilisation.md -o pdf/fundamentals-of-blocks-and-patterns-utilisation.pdf --pdf",
+    "marp:fundamentals-of-blocks-and-patterns-utilisation:html": "npx marp doc/fundamentals-of-blocks-and-patterns-utilisation/fundamentals-of-blocks-and-patterns-utilisation.md -o html/fundamentals-of-blocks-and-patterns-utilisation.html",
+    "marp:fundamentals-of-blocks-and-patterns-utilisation:image": "npx marp --images png doc/fundamentals-of-blocks-and-patterns-utilisation/fundamentals-of-blocks-and-patterns-utilisation.md -o image/fundamentals-of-blocks-and-patterns-utilisation/image.png",
+    "marp:fundamentals-of-blocks-and-patterns-utilisation": "run-s marp:fundamentals-of-blocks-and-patterns-utilisation:*",
     "marp": "run-p marp:*",
     "checkNpmUpdate": "ncu -u",
     "updateNpmPackage": "npm install"
