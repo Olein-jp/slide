@@ -93,7 +93,96 @@ size: 16:9
 
 ---
 
-![bg left](https://raw.githubusercontent.com/Olein-jp/slide/main/doc/fundamentals-of-blocks-and-patterns-utilisation/assets/images/001.png)
+![bg vertical right](https://raw.githubusercontent.com/Olein-jp/slide/main/doc/fundamentals-of-blocks-and-patterns-utilisation/assets/images/001.png)
+
 ![bg](https://raw.githubusercontent.com/Olein-jp/slide/main/doc/fundamentals-of-blocks-and-patterns-utilisation/assets/images/002.png)
 
-# どちらを使っていますか？
+# どちらを使っていますか？🙋
+
+- ブロックエディター
+- クラシックエディター
+
+---
+
+# ブロックを使うために必要な環境
+
+- ❌ ~~ブロックテーマ~~
+- ⭕️ ブロックエディター
+
+<br>ブロックエディターは WordPress 5.0（2018年12月10日リリース）から採用されている標準エディターです。
+
+---
+
+<!-- _class: section-title -->
+
+# WordPress から提供される<br>ブロックの紹介
+
+---
+
+![bg left contain](https://raw.githubusercontent.com/Olein-jp/slide/main/doc/fundamentals-of-blocks-and-patterns-utilisation/assets/images/003.png)
+
+## テキスト
+
+1. 段落
+2. 見出し
+3. リスト
+4. テーブル
+
+---
+
+![bg left contain](https://raw.githubusercontent.com/Olein-jp/slide/main/doc/fundamentals-of-blocks-and-patterns-utilisation/assets/images/004.png)
+
+## メディア
+
+1. 画像
+2. カバー
+3. メディアとテキスト
+
+---
+
+![bg left contain](https://raw.githubusercontent.com/Olein-jp/slide/main/doc/fundamentals-of-blocks-and-patterns-utilisation/assets/images/005.png)
+
+## デザイン
+
+1. グループ
+2. ボタン
+3. カラム
+
+<br>横並び・縦積み・グリッドはグループのバリエーションブロック
+
+---
+
+![bg left contain](https://raw.githubusercontent.com/Olein-jp/slide/main/doc/fundamentals-of-blocks-and-patterns-utilisation/assets/images/006.png)
+
+## ウィジェット
+
+1. 最新の投稿
+2. カスタム HTML
+3. ショートコード
+
+---
+
+<!-- _class: section-title -->
+
+# コアブロックを使ったレイアウト例
+
+---
+
+<!-- _class: section-title -->
+
+# パターンとは
+
+---
+
+## パターンとは
+
+- 1つ以上のブロックの集合体
+- 提供元は様々
+  - パターンライブラリ（WordPress.org）
+  - テーマ
+  - プラグイン
+  - ユーザー
+
+---
+
+## パターンへのアクセス
