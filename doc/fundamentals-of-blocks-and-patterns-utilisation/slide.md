@@ -185,4 +185,51 @@ size: 16:9
 
 ---
 
+<!-- _class: section-title -->
+
 ## パターンへのアクセス
+
+---
+
+<!-- _class: only-bg-image -->
+
+![bg contain](https://raw.githubusercontent.com/Olein-jp/slide/main/doc/fundamentals-of-blocks-and-patterns-utilisation/assets/images/007.png)
+
+---
+
+<!-- _class: only-bg-image -->
+
+![bg contain](https://raw.githubusercontent.com/Olein-jp/slide/main/doc/fundamentals-of-blocks-and-patterns-utilisation/assets/images/008.png)
+
+---
+
+<!-- _class: only-bg-image -->
+
+![bg contain](https://raw.githubusercontent.com/Olein-jp/slide/main/doc/fundamentals-of-blocks-and-patterns-utilisation/assets/images/009.png)
+
+---
+
+<!-- _class: section-title -->
+
+# パターンにはどんな種類があるの？
+
+---
+
+## パターンの種類
+
+- 同期パターン
+  - 上書き機能の有無
+- 非同期パターン
+
+---
+
+<!-- _class: section-title -->
+
+# どんな時にパターンは活用できるの？
+
+---
+
+## パターンの活用方法
+
+- ページやコンテンツの雛形（非同期パターン）
+- CTA やバナーなどの管理（同期パターン）
