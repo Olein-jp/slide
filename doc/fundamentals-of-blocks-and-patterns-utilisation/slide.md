@@ -74,10 +74,10 @@ size: 16:9
 # 自己紹介
 
 - 久野 晃司（岐阜県岐阜市在住）
-- 屋号：[オレインデザイン](https://olein-design.com)
+- [オレインデザイン](https://olein-design.com) 代表
+- 岐阜市登録市民団体 Shift 代表
 - フリーランス ウェブ制作者
 - [WordPress コントリビューター](https://profiles.wordpress.org/olein/)
-- Gifu WordPress Meetup 共同オーガナイザー
 - Snow Monkey エキスパート／最近は unitone 触ってます
 - [hook wp_](https://hook-wp.com/) メンバー
 - [本、書きました（TT4本）](https://amzn.to/4fKGPWd)
@@ -121,7 +121,14 @@ size: 16:9
 
 <!-- _class: section-title -->
 
-# WordPress から提供される<br>ブロックの紹介
+# コアブロックでレイアウトを組むために<br>必要な"２つ"の知識
+
+---
+
+# 1. コアブロックの役割を理解する
+
+- ❌ 思い通りのレイアウトが組めればどんなブロックを使っても良い
+- ⭕️ コアブロックの役割を理解して使い分ける（マークアップ的思考👍）
 
 ---
 
@@ -129,10 +136,10 @@ size: 16:9
 
 ## テキスト
 
-1. 段落
-2. 見出し
-3. リスト
-4. テーブル
+1. 段落 `<p>`
+2. 見出し `<h1>`
+3. リスト `<ul>`, `<ol>`
+4. テーブル `<table>`
 
 ---
 
@@ -140,9 +147,9 @@ size: 16:9
 
 ## メディア
 
-1. 画像
-2. カバー
-3. メディアとテキスト
+1. 画像 `<figure><img>`
+2. カバー `<div>`and more
+3. メディアとテキスト<br>`<div><figure><img>`
 
 ---
 
@@ -150,9 +157,9 @@ size: 16:9
 
 ## デザイン
 
-1. グループ
-2. ボタン
-3. カラム
+1. グループ `<div>` and more
+2. ボタン `<a>`
+3. カラム `<div>`
 
 <br>横並び・縦積み・グリッドはグループのバリエーションブロック
 
@@ -165,6 +172,25 @@ size: 16:9
 1. 最新の投稿
 2. カスタム HTML
 3. ショートコード
+
+---
+
+# 2. 基本レイアウトを組む<br>ブロックを理解する
+
+- グループブロック（縦積み・横並び）
+- カラムブロック
+
+---
+
+<!-- _class: only-bg-image -->
+
+![bg contain](https://raw.githubusercontent.com/Olein-jp/slide/main/doc/fundamentals-of-blocks-and-patterns-utilisation/assets/images/014.jpg)
+
+---
+
+<!-- _class: only-bg-image -->
+
+![bg contain](https://raw.githubusercontent.com/Olein-jp/slide/main/doc/fundamentals-of-blocks-and-patterns-utilisation/assets/images/015.jpg)
 
 ---
 
@@ -261,6 +287,16 @@ size: 16:9
 
 ---
 
+<!-- _class: only-bg-image -->
+
+![bg contain](https://raw.githubusercontent.com/Olein-jp/slide/main/doc/fundamentals-of-blocks-and-patterns-utilisation/assets/images/016.jpg)
+
+---
+
+# 同期パターンの上書き機能デモ
+
+---
+
 <!-- _class: section-title -->
 
 # ブロックバインディングの強化
@@ -277,6 +313,12 @@ size: 16:9
 <!-- _class: bg-image -->
 
 ![bg contain](https://raw.githubusercontent.com/Olein-jp/slide/main/doc/fundamentals-of-blocks-and-patterns-utilisation/assets/images/013.jpg)
+
+---
+
+時間があれば
+
+## ブロックバインディングのデモ
 
 ---
 
