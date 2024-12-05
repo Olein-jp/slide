@@ -93,6 +93,12 @@ size: 16:9
 
 ---
 
+<!-- _class: section-title -->
+
+# ブロックを使うために必要な環境
+
+---
+
 ![bg vertical right](https://raw.githubusercontent.com/Olein-jp/slide/main/doc/fundamentals-of-blocks-and-patterns-utilisation/assets/images/001.png)
 
 ![bg](https://raw.githubusercontent.com/Olein-jp/slide/main/doc/fundamentals-of-blocks-and-patterns-utilisation/assets/images/002.png)
@@ -168,6 +174,24 @@ size: 16:9
 
 ---
 
+<!-- _class: only-bg-image -->
+
+![bg contain](https://raw.githubusercontent.com/Olein-jp/slide/main/doc/fundamentals-of-blocks-and-patterns-utilisation/assets/images/010.jpg)
+
+---
+
+<!-- _class: only-bg-image -->
+
+![bg contain](https://raw.githubusercontent.com/Olein-jp/slide/main/doc/fundamentals-of-blocks-and-patterns-utilisation/assets/images/011.jpg)
+
+---
+
+<!-- _class: only-bg-image -->
+
+![bg contain](https://raw.githubusercontent.com/Olein-jp/slide/main/doc/fundamentals-of-blocks-and-patterns-utilisation/assets/images/012.jpg)
+
+---
+
 <!-- _class: section-title -->
 
 # パターンとは
@@ -187,7 +211,7 @@ size: 16:9
 
 <!-- _class: section-title -->
 
-## パターンへのアクセス
+# パターンへのアクセス
 
 ---
 
@@ -233,3 +257,42 @@ size: 16:9
 
 - ページやコンテンツの雛形（非同期パターン）
 - CTA やバナーなどの管理（同期パターン）
+- スタイリングを一元管理したいコンポーネントの管理（同期パターンの上書き機能）
+
+---
+
+<!-- _class: section-title -->
+
+# ブロックバインディングの強化
+
+---
+
+## ブロックバインディングとは
+
+- 任意のブロックとカスタムフィールドをはじめとする様々なデータとを結びつけることができる
+- Block Bindings API により実現
+
+---
+
+<!-- _class: bg-image -->
+
+![bg contain](https://raw.githubusercontent.com/Olein-jp/slide/main/doc/fundamentals-of-blocks-and-patterns-utilisation/assets/images/013.jpg)
+
+---
+
+<!-- _class: section-title -->
+
+# まとめ
+
+---
+
+## 僕が想像する今後の WordPress
+
+- よりブロックエディター（サイトエディター）が使いやすくなる
+- （これまでは書いていたけど）コードを書かずに出来ることが増えていく
+- メンテナンス性を考えた制作の重要度が高まる（不良品の波の影響）
+  - 安心して「使い続けられる」サイトを作ることが求められる
+
+---
+
+# おわり
