@@ -275,7 +275,7 @@ Amazon Kindle で発売中。Kindle Unlimited で無料で読めます。
 
 ---
 
-![bg left contain](https://olein-design.com/wp-content/uploads/2024/12/tt5-book-hyoushi.jpg)
+![bg left contain](https://raw.githubusercontent.com/Olein-jp/slide/main/doc/getting-started-with-wordpress-2025/assets/images/gsww-01.png)
 
 ## パーマリンク設定は慎重に
 
