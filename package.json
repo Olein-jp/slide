@@ -24,6 +24,10 @@
     "marp:fundamentals-of-blocks-and-patterns-utilisation:html": "npx marp doc/fundamentals-of-blocks-and-patterns-utilisation/slide.md -o html/fundamentals-of-blocks-and-patterns-utilisation.html",
     "marp:fundamentals-of-blocks-and-patterns-utilisation:image": "npx marp --images png doc/fundamentals-of-blocks-and-patterns-utilisation/slide.md -o image/fundamentals-of-blocks-and-patterns-utilisation/image.png",
     "marp:fundamentals-of-blocks-and-patterns-utilisation": "run-s marp:fundamentals-of-blocks-and-patterns-utilisation:*",
+    "marp:getting-started-with-wordpress-2025:pdf": "npx marp doc/getting-started-with-wordpress-2025/slide.md -o pdf/getting-started-with-wordpress-2025.pdf --pdf",
+    "marp:getting-started-with-wordpress-2025:html": "npx marp doc/getting-started-with-wordpress-2025/slide.md -o html/getting-started-with-wordpress-2025.html",
+    "marp:getting-started-with-wordpress-2025:image": "npx marp --images png doc/getting-started-with-wordpress-2025/slide.md -o image/getting-started-with-wordpress-2025/image.png",
+    "marp:getting-started-with-wordpress-2025": "run-s marp:getting-started-with-wordpress-2025:*",
     "marp": "run-p marp:*",
     "checkNpmUpdate": "ncu -u",
     "updateNpmPackage": "npm install"
