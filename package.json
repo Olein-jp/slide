@@ -32,6 +32,10 @@
     "marp:block-editor-basic-202502:html": "npx marp doc/block-editor-basic-202502/slide.md -o html/block-editor-basic-202502.html",
     "marp:block-editor-basic-202502:image": "npx marp --images png doc/block-editor-basic-202502/slide.md -o image/block-editor-basic-202502/image.png",
     "marp:block-editor-basic-202502": "run-s marp:block-editor-basic-202502:*",
+    "marp:wordpress-68-update-information:pdf": "npx marp doc/wordpress-68-update-information/slide.md -o pdf/wordpress-68-update-information.pdf --pdf",
+    "marp:wordpress-68-update-information:html": "npx marp doc/wordpress-68-update-information/slide.md -o html/wordpress-68-update-information.html",
+    "marp:wordpress-68-update-information:image": "npx marp --images png doc/wordpress-68-update-information/slide.md -o image/wordpress-68-update-information/image.png",
+    "marp:wordpress-68-update-information": "run-s marp:wordpress-68-update-information:*",
     "marp": "run-p marp:*",
     "checkNpmUpdate": "ncu -u",
     "updateNpmPackage": "npm install"
