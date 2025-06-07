@@ -36,6 +36,10 @@
     "marp:wordpress-68-update-information:html": "npx marp doc/wordpress-68-update-information/slide.md -o html/wordpress-68-update-information.html",
     "marp:wordpress-68-update-information:image": "npx marp --images png doc/wordpress-68-update-information/slide.md -o image/wordpress-68-update-information/image.png",
     "marp:wordpress-68-update-information": "run-s marp:wordpress-68-update-information:*",
+    "marp:how-to-fix-and-customize-wordpress-website:pdf": "npx marp doc/how-to-fix-and-customize-wordpress-website/slide.md -o pdf/how-to-fix-and-customize-wordpress-website.pdf --pdf",
+    "marp:how-to-fix-and-customize-wordpress-website:html": "npx marp doc/how-to-fix-and-customize-wordpress-website/slide.md -o html/how-to-fix-and-customize-wordpress-website.html",
+    "marp:how-to-fix-and-customize-wordpress-website:image": "npx marp --images png doc/how-to-fix-and-customize-wordpress-website/slide.md -o image/how-to-fix-and-customize-wordpress-website/image.png",
+    "marp:how-to-fix-and-customize-wordpress-website": "run-s marp:how-to-fix-and-customize-wordpress-website:*",
     "marp": "run-p marp:*",
     "checkNpmUpdate": "ncu -u",
     "updateNpmPackage": "npm install"
