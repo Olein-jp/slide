@@ -40,6 +40,10 @@
     "marp:how-to-fix-and-customize-wordpress-website:html": "npx marp doc/how-to-fix-and-customize-wordpress-website/slide.md -o html/how-to-fix-and-customize-wordpress-website.html",
     "marp:how-to-fix-and-customize-wordpress-website:image": "npx marp --images png doc/how-to-fix-and-customize-wordpress-website/slide.md -o image/how-to-fix-and-customize-wordpress-website/image.png",
     "marp:how-to-fix-and-customize-wordpress-website": "run-s marp:how-to-fix-and-customize-wordpress-website:*",
+    "marp:start-block-editor-from-zero:pdf": "npx marp doc/start-block-editor-from-zero/slide.md -o pdf/start-block-editor-from-zero.pdf --pdf",
+    "marp:start-block-editor-from-zero:html": "npx marp doc/start-block-editor-from-zero/slide.md -o html/start-block-editor-from-zero.html",
+    "marp:start-block-editor-from-zero:image": "npx marp --images png doc/start-block-editor-from-zero/slide.md -o image/start-block-editor-from-zero/image.png",
+    "marp:start-block-editor-from-zero": "run-s marp:start-block-editor-from-zero:*",
     "marp": "run-p marp:*",
     "checkNpmUpdate": "ncu -u",
     "updateNpmPackage": "npm install"
